@@ -1,14 +1,11 @@
 # factorize
-a simple prime factorization module
+a simple prime factorization file / module
 
-This small, simple file provides two generators: `primes` and `factorize`:
+![python factorize.py 2595925957847039](https://github.com/marcelgarus/factorize/blob/master/factorize.gif?raw=true)
+
+If you want to extend this functionality, you can also import two generators: `primes` and `factorize`:
 ```python
 from factorize import primes, factorize
-```
-Or if you're not in the mood of importing it, you can just run it with a number to be factorized:
-
-```shell
-python factorize.py 2595925957847039
 ```
 
 ## primes
