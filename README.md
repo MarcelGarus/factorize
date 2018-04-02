@@ -5,7 +5,8 @@ This small, simple file provides two generators: `primes` and `factorize`:
 ```python
 from factorize import primes, factorize
 ```
-Or you can just call it with a number to let it be factorized:
+Or if you're not in the mood of importing it, you can just run it with a number to be factorized:
+
 ```shell
 python factorize.py 2595925957847039
 ```
