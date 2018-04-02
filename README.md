@@ -32,4 +32,4 @@ for factor in factorize(2595925957847039):
 # prints 38047, 140281, and 486377 with a break between each number as it takes
 # some time to calculate them
 ```
-Factors are generated on the fly and the generator yields them as they become available.
+The generator yields factors as they become available.
