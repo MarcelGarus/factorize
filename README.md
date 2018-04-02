@@ -29,6 +29,7 @@ Factorize is a simple generator for factorizing a number into its primes.
 ```python
 for factor in factorize(2595925957847039):
     print(factor)
-# prints 38047, 140281, and 486377 with a break between each number as it takes some time to calculate them
+# prints 38047, 140281, and 486377 with a break between each number as it takes
+# some time to calculate them
 ```
 Factors are generated on the fly and the generator yields them as they become available.
