@@ -35,7 +35,7 @@ def primes(n=-1, limit=-1):
 		>>> print(list(primes(limit=100)))
 		[2, 3, ..., 89, 97]
 	"""
-	found = set() # all the found primes
+	found = list() # all the found primes
 	candidate = 2 # the current candidate
 
 	# if n or limit is given, use that. if both are -1, this loop runs forever
@@ -46,10 +46,13 @@ def primes(n=-1, limit=-1):
 			if candidate % prime == 0:
 				is_prime = False
 				break
+			if prime > sqrt(candidate):
+				break
+
 
 		# if it's indeed a prime, add it to list of found primes and yield it
 		if is_prime:
-			found.add(candidate)
+			found.append(candidate)
 			yield candidate
 
 		candidate += 1 # next candidate
