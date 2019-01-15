@@ -75,8 +75,8 @@ def factorize(n, __output=False):
 
 	operator = '=' # the operator to display. either '=' or '*'
 	limit = ceil(sqrt(n))
-	for prime in primes():
-		if __output:
+	for idx, prime in enumerate(primes()):
+		if __output and idx % 100 == 0:
 			print('%c %d (calculated primes up to %d ...)' %
 					(operator, n, prime), end='\r')
 
